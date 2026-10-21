@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>R, D, or I? Quiz</title>
+<meta name="theme-color" content="#1c1e22">
+<link rel="stylesheet" href="app.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="R, D, or I?">
+</head><body>
+<header class="top"><a href="#/" class="logo"><span class="r">R</span>, <span class="d">D</span>, or <span class="i">I</span>?</a>
+<nav><a href="#/episodes">Quizzes</a><a href="#/history">My history</a><a href="#/results">Results</a></nav></header>
+<main id="app"></main>
+<footer>For fun &amp; reflection. Not a scientific survey. Your score isn't your registration.</footer>
+<script src="config.js"></script><script src="episodes.js"></script><script src="storage.js"></script><script src="app.js"></script>
+<script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js"));</script>
+</body></html>
