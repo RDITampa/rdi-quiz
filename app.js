@@ -44,7 +44,7 @@ const views = {
       if (!/^[A-Za-z0-9_.-]{2,24}$/.test(v)) { $("#e").textContent = "2–24 letters, numbers, _ . or -"; return; }
       user = v.toLowerCase(); localStorage.setItem("rdi_user", user); location.hash = "#/episodes";
     };
-    $("#go").onclick = go; $("#u").onkeydown = ev => ev.key === "Enter" && go();
+    $("#go").onclick = go; $("#u").onkeydown = ev => { if (ev.key === "Enter") go(); };
   },
   async episodes() {
     if (!user) return (location.hash = "#/");
