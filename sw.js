@@ -1,5 +1,5 @@
 // Offline cache. Bump VERSION whenever files change (e.g. new episode) so phones get the update.
-const VERSION = "rdi-v3";
+const VERSION = "rdi-v4";
 const FILES = ["./", "index.html", "app.css", "app.js", "episodes.js", "storage.js", "config.js",
   "manifest.webmanifest", "icon-192.png", "icon-512.png", "icon-512-maskable.png", "apple-touch-icon.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES))); self.skipWaiting(); });
